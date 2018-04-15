@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+osm2pgsql -d baltic -S osm2pgsql.style -s -C 500 data.pbf
+psql baltic -f post_populate.sql
+vacuumdb baltic
+

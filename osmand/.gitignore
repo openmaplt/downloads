@@ -1,0 +1,6 @@
+log
+osmand.log
+dist/*.obf
+dist/*.zip
+dist/*.odb
+dist/*.log

@@ -1,0 +1,28 @@
+#
+# This file can be given to mkgmap using the -c option
+# Please edit it first to add a description of each map.
+#
+
+# You can set the family id for the map
+# family-id: 980
+# product-id: 1
+
+# Following is a list of map tiles.  Add a suitable description
+# for each one.
+
+mapname: 85700001
+description: LT-Kaunas
+input-file: 85700001.o5m
+
+mapname: 85700002
+description: LT-Klaipeda
+input-file: 85700002.o5m
+
+mapname: 85700003
+description: LT-Vilnius
+input-file: 85700003.o5m
+
+mapname: 85700004
+description: LT-Panevezys
+input-file: 85700004.o5m
+

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+osmosis --rb ../lithuania/lithuania.pbf --mw file=./dist/lithuania.map type=hd
+cd dist && bzip2 -fk lithuania.map

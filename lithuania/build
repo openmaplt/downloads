@@ -1,0 +1,7 @@
+#!/bin/bash
+
+osmium extract -p lithuania_strict.poly --set-bounds -O -o ./dist/lithuania.pbf ../baltic/data.pbf && \
+osmium cat -O -o ./dist/lithuania.osm.bz2 ./dist/lithuania.pbf && \
+osmconvert ./dist/lithuania.pbf --out-o5m > ./dist/lithuania.o5m
+cd dist && bzip2 -1 -kf lithuania.o5m
+

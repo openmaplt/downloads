@@ -1,0 +1,9 @@
+#!/bin/bash
+
+java -jar ../splitter.jar --geonames-file=../cities15000.zip --mapid=85700001 --output=o5m --split-file=../areas.list lithuania.o5m && \
+java -ea -Xmx800M -jar ../mkgmap.jar -c options.conf --bounds=../bounds --style-file=../mkgmap-styles --style=default && \
+rm ./8570*.o5m && \
+zip -juq ./mapsource.zip 8570* ../install.bat ../uninstall.bat
+rm ./8570*
+rm ./ovm_*
+

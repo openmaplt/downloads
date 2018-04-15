@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cp ../lithuania/lithuania.pbf ./dist/lithuania_europe.osm.pbf
+java -Djava.util.logging.config.file=logging.properties -Xms256M -Xmx2G -cp "./OsmAndMapCreator.jar:./lib/OsmAnd-core.jar:./lib/*.jar" net.osmand.data.index.IndexBatchCreator ./config.xml
+cd dist && zip -1 Lithuania_europe_2.zip Lithuania_europe_2.obf
